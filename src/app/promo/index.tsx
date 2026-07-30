@@ -35,7 +35,7 @@ export default function PromoScreen() {
 
   useEffect(() => {
     progressWidth.value = withSpring(progress, { damping: 15, stiffness: 80 });
-  }, [progress]);
+  }, [progress, progressWidth]);
 
   const animatedProgressStyle = useAnimatedStyle(() => ({
     width: `${progressWidth.value * 100}%`,

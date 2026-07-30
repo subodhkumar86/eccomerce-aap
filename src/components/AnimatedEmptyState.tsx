@@ -37,7 +37,7 @@ export default function AnimatedEmptyState({
       -1,
       true
     );
-  }, []);
+  }, [translateY]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],

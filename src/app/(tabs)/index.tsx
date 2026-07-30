@@ -83,7 +83,7 @@ export default function HomeScreen() {
         withSpring(1)
       );
     }
-  }, [cartCount]);
+  }, [badgeScale, cartCount]);
 
   // Filter products
   const filteredProducts = MOCK_PRODUCTS.filter((product) => {

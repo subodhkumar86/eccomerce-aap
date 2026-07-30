@@ -29,7 +29,7 @@ const ColorItem = ({ color, isActive, onPress, colors }: { color: string; isActi
 
   useEffect(() => {
     scale.value = withSpring(isActive ? 1.15 : 1, { damping: 8, stiffness: 150 });
-  }, [isActive]);
+  }, [isActive, scale]);
 
   const animStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
@@ -49,7 +49,7 @@ const SizeChipItem = ({ size, isActive, onPress, colors }: { size: string; isAct
 
   useEffect(() => {
     scale.value = withSpring(isActive ? 1.08 : 1, { damping: 8, stiffness: 150 });
-  }, [isActive]);
+  }, [isActive, scale]);
 
   const animStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],

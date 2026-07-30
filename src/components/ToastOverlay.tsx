@@ -30,7 +30,7 @@ export default function ToastOverlay() {
       // Slide back up offscreen
       translateY.value = withTiming(-150, { duration: 250 });
     }
-  }, [toast.visible, insets.top]);
+  }, [insets.top, toast.visible, translateY]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],

@@ -33,7 +33,7 @@ const CategoryChipItem = ({
       damping: 10,
       stiffness: 140,
     });
-  }, [isActive]);
+  }, [isActive, scale]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],

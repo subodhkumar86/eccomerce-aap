@@ -89,7 +89,7 @@ export default function OrderTrackScreen() {
       -1,
       true
     );
-  }, [statusConfig?.progress]);
+  }, [pulseScale, statusConfig?.progress, truckProgress]);
 
   const animatedTruckStyle = useAnimatedStyle(() => {
     const leftOffset = 40 + truckProgress.value * (width - 120);
